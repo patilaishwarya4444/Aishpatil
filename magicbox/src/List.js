@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import create from "./create";
+import Create from "./create";
 import info, { getting } from './Dataacess'
 import Read from "./Read";
 import RemoveCircleIcon from '@mui/icons-material/RemoveCircle';
@@ -32,7 +32,7 @@ const List=()=>{
         <>
             {(cview)?
             <>
-                <create/>
+                <Create/>
                 <button className="btn btn-outline-dark" 
                 onClick={()=>setCview(false)}>
                     Back
